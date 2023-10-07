@@ -31,7 +31,7 @@ byte data[4][8]={
     B11101100,
     B10000100
   },
-  //루돌프
+  //산타 웃는 얼굴
   {
     B00000100,
     B01100010,
@@ -42,7 +42,7 @@ byte data[4][8]={
     B01100010,
     B00000100
   },
-  //산타
+  //루돌프(모자)
   {
     B11100000,
     B10110000,
@@ -156,7 +156,7 @@ void loop() {
       }
       for(int j=0; j<8; j++)
       {
-        lc.setRow(0,j,data[1][j]); // 산타모자
+        lc.setRow(0,j,data[1][j]); // 웃는 표정
       }
       now=2;
       mp3_play(now);
@@ -177,7 +177,7 @@ void loop() {
       }
       for(int j=0; j<8; j++)
       {
-        lc.setRow(0,j,data[2][j]); // 루돌프 웃는 표정
+        lc.setRow(0,j,data[2][j]); // 모자
       }
       now=3;
       mp3_play(now);
